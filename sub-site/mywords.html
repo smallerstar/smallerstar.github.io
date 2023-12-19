@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>悠然的碎碎念</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../images/smiling-loli.ico">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <nav>
+            <a href="../index.html">主页</a>
+            <a href="mywords.html">一些想法</a>
+        </nav>
+
+        <main>
+            <h2>一些她在这个世界上存在过的证明。</h2>
+        </main>
+
+        <div class="mywords" style="height: 210px; background-size: 100% 210px;">
+            <p><br></p>
+            <div id="date-and-context">2022-8-3</div>
+            <h3>这是我自己的第一个网站w</h3>
+            <p id="date-and-context">...
+                <br>你好吖。
+            </p>
+        </div>
+
+        <div class="mywords" style="height: 260px; background-size: 100% 260px;">
+            <p><br></p>
+            <div id="date-and-context">2023-12-19</div>
+            <h3>加了puts("A")后bug“消失”现象的思考</h3>
+            <p id="date-and-context">大一的C语言课中，调试自己的程序中的一个bug的时候发现为了定位出错的区域而在代码中加上类似puts("A")这样的语句时，莫名就“没有”bug了。
+                <br>后来发现是代码中另一个位置访问了没有经过初始化的数组元素导致了问题；加上puts()后，数组元素中的
+                <br>帮另一个同学调试程序时也发现了同样的现象，后来定位到bug的位置是类型问题（数组元素为uint16_t，但是访问的时候却当成int）。
+                <br>换成printf()之后也是差不多的。
+                <br>未定义行为的影响是未知的。可能是输出语句对内存发生了什么微妙的改变？
+            </p>
+        </div>
+
+    </body>
+</html>

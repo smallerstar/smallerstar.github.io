@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>悠然的主页</title>
+        <meta charset="utf-8">
+        <meta name="description" content="她试着在这里重建自己的精神家园。">
+        <link rel="icon" href="images/smiling-loli.ico">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/inside-pointer.js" defer></script>
+        <script src="scripts/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("html").hide();
+                $("body").animate({left:'-=1500px'},0);
+                $("html").fadeIn(2000);
+                $("body").animate({left:'+=1500px'},2000);
+
+            });
+        </script>
+    </head>
+    <body style="position:relative;">
+
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="sub-site/mywords.html">一些想法</a>
+        </nav>
+
+        <main>
+            <p style="font-size:small;text-indent: -2em;">可能需要一定时间加载图片。</p>
+            <h1>你好o(๑╹◡╹)ﾉ"~</h1>
+            <h2>这里安放着某个人的碎碎念。</h2>
+        </main>
+
+    </body>
+</html>
