@@ -19,14 +19,14 @@
 
         <div class="mywords" style="height: 210px; background-size: 100% 210px;">
             <p><br></p>
-            <div id="date-and-context">2022-8-3</div>
+            <div id="date-and-context">2023-8-3</div>
             <h3>这是我自己的第一个网站w</h3>
             <p id="date-and-context">...
                 <br>你好吖。
             </p>
         </div>
 
-        <div class="mywords" style="height: 260px; background-size: 100% 260px;">
+        <div class="mywords" style="height: 300px; background-size: 100% 300px;">
             <p><br></p>
             <div id="date-and-context">2023-12-19</div>
             <h3>加了puts("A")后bug“消失”现象的思考</h3>
@@ -34,7 +34,20 @@
                 <br>后来发现是代码中另一个位置访问了没有经过初始化的数组元素导致了问题；加上puts()后，数组元素中的
                 <br>帮另一个同学调试程序时也发现了同样的现象，后来定位到bug的位置是类型问题（数组元素为uint16_t，但是访问的时候却当成int）。
                 <br>换成printf()之后也是差不多的。
-                <br>未定义行为的影响是未知的。可能是输出语句对内存发生了什么微妙的改变？
+                <br>可能是输出语句对内存发生了什么微妙的改变？请教了一下前辈，告诉我这是因为UB，讨论UB是没有意义的。那就不深究了~
+                <br>总之加输出语句用来寻找bug是未必行得通的。
+                <br>虽然加了-Wall和-Wextra，但是这次问题还是检测不出来的。所以还是要争取第一遍就写对呀。
+            </p>
+        </div>
+
+        <div class="mywords" style="height: 240px; background-size: 100% 240px;">
+            <p><br></p>
+            <div id="date-and-context">2024-1-5</div>
+            <h3>大一第一学期的一些想法</h3>
+            <p id="date-and-context">物理试卷其实不是很难嘛 之前因为开课老师风评偏难，有些忧虑过头了，其实好好学了还是学明白了的
+                <br>之前抱着好玩的心态去考了的大学生数学竞赛，出乎意料地拿了一个非数学A类的一等奖。把自己惊讶到了（
+                <br>大一的各种乱七八糟的课好多，呜呜
+                <br>绩点应该是完全够保研的，看了一下导师评价的相关网站，好多导师都不让出去实习诶，感觉对找工作很不利。
             </p>
         </div>
 
