@@ -51,5 +51,18 @@
             </p>
         </div>
 
+        <div class="mywords" style="height: 270px; background-size: 100% 270px;">
+            <p><br></p>
+            <div id="date-and-context">2024-1-6</div>
+            <h3>配置环境时的一些发现</h3>
+            <p id="date-and-context">Java在VSCode上运行的时候刚开始出现了一些乱七八糟的异常，发现主要原因是版本不匹配
+                <br>以前玩Minecraft什么的，导致电脑上各种地方有各种版本的Java，全都删了重新装过就好了
+                <br>测试WSL能不能正常用的时候发现这样的语句会有问题：
+                <br>printf("1"); fork(); printf("2");
+                <br>子进程也会打印1。查证了一下发现是因为printf("1")只是将1放到缓冲区里还没打印出来，子进程也会继承这个缓冲区
+                <br>换成printf("1\n")就不会打印出来了
+            </p>
+        </div>
+
     </body>
 </html>
